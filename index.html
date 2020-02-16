@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Event Notification</title>
+</head>
+<body>
+    <form id="frm" method="GET" action="results.html">
+        <div class="container">
+            <h2>Get notified of your event easy and fast!</h2>
+            <div class="container-element container-element-name">
+                <label for="name">Full Name: </label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="container-element container-element-email">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="example@example.com" required>
+            </div>
+            <div class="container-element container-element-appointment">
+                <label for="event">Event:  </label>
+                <input type="text" name="event" placeholder="Event description" id="event" required>
+            </div>
+            <div class="container-element container-element-date">
+                <label for="date">Date and time:  </label>
+                <input type="datetime-local" name="date" id="date" required>
+            </div>
+            <div class="container-element container-element-submit">
+                <button type="submit" class="myButton">Submit</button>
+            </div>
+        </div>
+        
+
+    </form>
+</body>
+</html>

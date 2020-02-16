@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Here is the confirmation for your event!</h2>
+        <div id="container-element" class="container-element"></div>
+        <div class="container-element">You should have also received the notification at your email.</div>
+        <a class="container-element"href="index.html">Go back to main page</a>
+    </div>
+    <script>
+        const info = document.getElementById('container-element')
+        new URLSearchParams(window.location.search).forEach((value,name) =>{
+            info.append(`${name} : ${value}`)
+            info.append(document.createElement('br'))
+        })
+    </script>
+</body>
+</html>
